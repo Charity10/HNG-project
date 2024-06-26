@@ -1,0 +1,118 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to right, rgb(245, 255, 245) 0%, rgb(173, 252, 163) 120%);
+}
+
+header{
+  background: #fff;
+  color: rgb(0, 0, 0);
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #40b736;
+}
+
+.my-goals{
+  padding: 100px 0 20px 0;
+  height: 100vh;
+}
+
+.section-title{
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.my-goals p {
+  font-size: 2rem;
+  color: #323030;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+.goal-content{
+  margin: 2rem 2rem;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  text-align: left;
+}
+
+.goal-list{
+  font-size: 1.3rem;
+  margin: 0 2rem;
+  text-align: justify;
+}
+
+.goal-img{
+  width: 30rem;
+}
+
+.image{
+  width: 68%;
+  height: 60%;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px ;
+  object-fit: contain;
+}
+
+@media screen and (max-width: 500px){
+  .logo {
+    font-size: .8rem;
+    padding: 10px;
+  }
+  body{
+    background: white;
+  }
+  .section-title{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  
+  .my-goals{
+    height: 100%;
+  }
+  .goal-img{
+    width: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .my-goals p {
+    font-size: 1.4rem;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    color: #323030;
+    padding: 20px;
+  }
+  .goal-content{
+    margin: 2rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .goal-list{
+    font-size: 1.3rem;
+    margin: 0 2rem;
+    text-align: justify;
+  }
+
+  
+}
