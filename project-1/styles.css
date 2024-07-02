@@ -20,9 +20,13 @@ header{
 }
 
 .logo {
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: bold;
   color: #40b736;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto 10px;
 }
 
 .my-goals{
@@ -46,7 +50,7 @@ header{
 .goal-content{
   margin: 2rem 2rem;
   display: flex;
-  /* align-items: center; */
+  align-items: center;
   justify-content: center;
   text-align: left;
 }
@@ -59,9 +63,14 @@ header{
 
 .goal-img{
   width: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
 }
 
-.image{
+.slackProfilePic{
   width: 68%;
   height: 60%;
   border-top-left-radius: 50px;
@@ -69,13 +78,31 @@ header{
   object-fit: contain;
 }
 
+.links{
+  display: flex;
+  justify-content: center;
+  /* margin: auto 10px; */
+  
+  background: #fff;
+  gap: 30px;
+  width: 100%;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+a{
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  /* padding: 20px; */
+  font-size: 1rem;
+}
+
 @media screen and (max-width: 500px){
   .logo {
-    font-size: .8rem;
+    font-size: .7rem;
     padding: 10px;
-  }
-  body{
-    background: white;
+    display: block;
+    margin: auto 5rem;
+
   }
   .section-title{
     font-size: 2rem;
